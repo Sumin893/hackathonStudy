@@ -1,15 +1,17 @@
 import styled from 'styled-components';
+import { Link, Outlet } from 'react-router-dom';
 
 const Header = () => {
   return (
+    <>
   <NavContents>
     <Nav>
       <LeftSection>
         <Logo><img src="/logo.png" alt="logo" /></Logo>
         <NavbarList>
           <ul>
-            <li className='Highlight'>중고거래</li>
-            <li>동네업체</li>
+            <li><StyledLink to= "/fleamarket">중고거래</StyledLink></li>
+            <li><StyledLink to= "/nearby-stores">동네업체</StyledLink></li>
             <li>알바</li>
             <li>부동산</li>
             <li>중고차 직거래</li>
@@ -22,6 +24,8 @@ const Header = () => {
       </RightSection>
     </Nav>
   </NavContents>
+  <Outlet />
+  </>
   );
 };
 
@@ -72,13 +76,13 @@ li {
   font-weight: 1000;
   font-size: 18px;
   color: #696969;
-}
-
-.Highlight {
-color: #ff8c00;
+  text-decoration: none;
 }
 `
-
+const StyledLink = styled(Link)`
+text-decoration: none;
+color: inherit;
+`
 const Input = styled.input`
 width: 250px;
 height: 40px;
@@ -86,6 +90,7 @@ background-color: #f2f3f6;
 border : 0px solid;
 border-radius : 10px;
 margin-right: 20px;
+padding-left:20px;
 `
 //글씨 살짝 오른쪽으로 하는 거!
 
@@ -97,7 +102,7 @@ cursor: pointer;
 background-color: white;
 padding: 10px 5px;
 
-.a {
+a {
   color: #212124;
   font-weight: 700;
 }

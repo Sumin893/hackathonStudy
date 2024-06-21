@@ -11,6 +11,6 @@ import Detail from "./pages/Detail";
       path: "/detail",
       element: <Detail />,
     },
-  ];
+  ]
 
 export default router;

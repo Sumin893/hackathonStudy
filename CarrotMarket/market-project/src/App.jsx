@@ -1,13 +1,13 @@
 import './App.css'
-import Header from "./components/Header";
-import Home from "./pages/Home/Home";
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import router from './router';
 
 function App() {
-
+  const RouterObject = createBrowserRouter(router);
   return (
     <>
-      <Header />
-      <Home />
+      <RouterProvider router={RouterObject} />
+  
     </>
   )
 }
