@@ -42,6 +42,7 @@ const Banner = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
+  height: 315px;
   margin-bottom: 40px; 
 `
 

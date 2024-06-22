@@ -1,41 +1,44 @@
 import styled from "styled-components";
 
 const NextItem = ({nextitems}) => {
-  console.log(nextitems)
   return(
-    <NextItems>
-      <Nextitem>
+    <Nexticon>
+      <NextItems>
         <ImageContent>
-        <div><img src="/Happy.png" /></div>
+        <div><img src="/Happy.png" /> </div>
         </ImageContent>
         <Name>
-        <TitleBox>
-        <Title>{nextitems.title}</Title>
-        <Place>{nextitems.place}</Place>
-        </TitleBox>
-        <Detail>{nextitems.detail}</Detail>
-        <Review>{nextitems.review}</Review>
+          <TitleBox>
+          <Title>{nextitems.title}</Title>
+          <Place>{nextitems.place}</Place>
+          </TitleBox>
+          <Detail>{nextitems.detail}</Detail>
+          <Review>{nextitems.review}</Review>
         </Name>
-      </Nextitem>
-    </NextItems>
+      </NextItems>
+    </Nexticon>
   )
 }
 
 export default NextItem
 
-const NextItems = styled.div`
+const Nexticon =  styled.div`
 display: flex;
 border-bottom: 0.5px solid #E2E2E2;
 padding: 10px 0 30px 0;
-
 `
 
-const Nextitem = styled.div`
+
+const NextItems = styled.div`
+margin-top: 3px;
+display: flex;
+
 &:hover{
   background-color: #E2E2E2;
   color: black;
 }
 `
+
 const ImageContent = styled.div`
 margin-right: 20px;
 `
@@ -51,7 +54,7 @@ margin-bottom: 3px;
 
 const Title = styled.div`
 font-weight: 700;
-font-size: 20px;
+font-size: 17px;
 margin-bottom: 3px;
 padding-right: 10px;
 `

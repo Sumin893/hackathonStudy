@@ -10,7 +10,7 @@ const Next = () => {
     title:"드롭플라워 - 송파",place:"가락1동",detail:"-송파구 단골순위 1위 꽃집 !!!",review:"후기200개"
     },
     {
-    title:"훈민용달, 이사, 용달이사 화물",place:"화곡동",detail:"-화곡동 단골순위 1위 용달 !!!",review:"후기200개"
+    title:"훈민용달, 이사, 화물",place:"화곡동",detail:"-화곡동 단골순위 1위 용달 !!!",review:"후기200개"
     },
     {
     title:"윤씨네 즉석두부",place:"신림동",detail:"-신림동 단골순위 1위 두부집 !!!",review:"후기200개"
@@ -57,6 +57,7 @@ export default Next
 
 const NextBanner = styled.div`
 width: 100%;
+height: 315px;
 display: flex;
 justify-content: center;
 margin-bottom: 40px;
@@ -70,7 +71,7 @@ margin-bottom: 40px;
 `
 
 const AnotherMarketTitle = styled.div`
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 `
 
 const AnotherMarketIndex = styled.div`
