@@ -20,5 +20,10 @@ border: solid 1px #dcdcdc;
 border-radius: 20px;
 cursor: pointer;
 background-color: white;
-/* &:hover: */
+
+  &:hover {
+    background-color: #E2E2E2;
+    color: black;
+  }
+
 `

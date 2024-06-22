@@ -4,17 +4,19 @@ const NextItem = ({nextitems}) => {
   console.log(nextitems)
   return(
     <NextItems>
-      <ImageContent>
-      <div><img src="/Happy.png" /></div>
-      </ImageContent>
-      <Name>
+      <Nextitem>
+        <ImageContent>
+        <div><img src="/Happy.png" /></div>
+        </ImageContent>
+        <Name>
         <TitleBox>
         <Title>{nextitems.title}</Title>
         <Place>{nextitems.place}</Place>
         </TitleBox>
         <Detail>{nextitems.detail}</Detail>
         <Review>{nextitems.review}</Review>
-      </Name>
+        </Name>
+      </Nextitem>
     </NextItems>
   )
 }
@@ -23,6 +25,16 @@ export default NextItem
 
 const NextItems = styled.div`
 display: flex;
+border-bottom: 0.5px solid #E2E2E2;
+padding: 10px 0 30px 0;
+
+`
+
+const Nextitem = styled.div`
+&:hover{
+  background-color: #E2E2E2;
+  color: black;
+}
 `
 const ImageContent = styled.div`
 margin-right: 20px;

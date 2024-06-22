@@ -39,7 +39,6 @@ const Next = () => {
     <AnotherMarket>
       <AnotherMarketTitle><h1>다양한 동네업체를 볼 수 있어요</h1></AnotherMarketTitle>
       <AnotherMarketIndex>
-      <NextButton/>
       {
           indexArr.map((val,idx)=> <NextButton key={idx} buttonitems={val}/>)
         }
@@ -83,7 +82,6 @@ margin-bottom: 40px;
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 column-gap: 10px;
-row-gap: 50px;
 
 @media screen and (max-width: 768px){
   grid-template-columns: repeat(1, 1fr);

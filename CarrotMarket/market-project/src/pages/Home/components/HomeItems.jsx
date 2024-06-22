@@ -26,8 +26,8 @@ display: flex;
 
 const ProductImage = styled.div`
 img { 
-  width: 190px;
-  height: 270px;
+  width: 150px;
+  height: 200px;
 }
 `
 

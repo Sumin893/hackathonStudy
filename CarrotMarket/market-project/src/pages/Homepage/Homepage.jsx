@@ -13,6 +13,6 @@ const Homepage = () => {
 export default Homepage
 
 const HomepageBanner = styled.div`
-  display: flex;
-  justify-content: center;
+display: flex;
+justify-content: center;
 `
