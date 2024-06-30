@@ -4,6 +4,7 @@ import Homepage from "./pages/Homepage/Homepage";
 import Home from "./pages/Home/Home";
 import Next from "./pages/Next/Next";
 import Event from "./pages/Event/Counter";
+import Members from "./pages/Members/Members"
 
 const router = [
   {
@@ -25,6 +26,10 @@ const router = [
       {
         path: "/Event",
         element: <Event />,
+      },
+      {
+        path: "/Members",
+        element: <Members />,
       },
     ]
   }

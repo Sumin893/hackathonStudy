@@ -13,7 +13,7 @@ const Header = () => {
             <li><StyledLink to= "/fleamarket">중고거래</StyledLink></li>
             <li><StyledLink to= "/nearby-stores">동네업체</StyledLink></li>
             <li><StyledLink to = "/event">이벤트</StyledLink></li>
-            <li>부동산</li>
+            <li><StyledLink to= "/members">멤버</StyledLink></li>
             <li>중고차 직거래</li>
           </ul>
         </NavbarList>
