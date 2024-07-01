@@ -1,15 +1,22 @@
 import styled from "styled-components";
+import { useState } from "react";
+import { CiHeart } from "react-icons/ci";
+import { FaHeart } from "react-icons/fa";
+
 
 const MemItems = ({member}) => {
-  console.log(member)
+  const [isHeart, setIsHeart] = useState(false);
 
   return(
     <MembersItem>
-        <Image>{member.image}</Image>
+        <Image src= {member.img}/>
       <MembersItemDetail>
         <Name><h3>{member.name}</h3></Name>
         <Part>{member.part}</Part>
       </MembersItemDetail>
+      {isHeart ? 
+      <FaHeart onClick={() => setIsHeart(false)}size={15}/> :
+      <CiHeart onClick={() => setIsHeart(true)} size={20}/>}
     </MembersItem>
   )
 }
@@ -17,22 +24,20 @@ const MemItems = ({member}) => {
 export default MemItems;
 
 const MembersItem = styled.div`
-  display: flex;
-  justify-content: center;
+margin: 20px;
+padding: 20px;
 `
 
-const Image = styled.div`
-/* img {
+const Image = styled.img`
   width: 150px;
   height: 200px;
-} */
 `
 
 const MembersItemDetail = styled.div`
 `
 
 const Name = styled.div`
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   
 `
 

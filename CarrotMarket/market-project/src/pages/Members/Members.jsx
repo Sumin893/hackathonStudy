@@ -23,7 +23,7 @@ const Members = () => {
 			<MembersTitle><h1>프론트엔드팀 멤버를 소개합니다!~</h1></MembersTitle>
 			<MemItems>
       {
-        testArr.map((val,idx)=> <MembersItems key={idx} member={val}/>)
+        testArr.map((val,idx) => <MembersItems key={idx} member={val}/>)
       }
 			</MemItems>
     </MembersList>
@@ -46,7 +46,7 @@ margin: 50px 0;
 `
 
 const MemItems = styled.div`
-display: grid;
-column-gap: 40px;
-row-gap: 10px;
+display: flex;
+justify-content: center;
+
 `
